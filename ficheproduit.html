@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+		<title>Lampe de chevet Touch à poser</title>
+		<meta name="description" content="Cette lampe à poser au système tactile s'allume et s'éteint au toucher et sera idéale dans une chambre. Que ce soit pour lire le soir ou pour un réveil en douceur, vous pourrez régler la luminosité facilement (3 intensités de lumière)"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="global">
+			<div class="container-fluid">
+				<div class="row">
+					<header class="col-12">
+						<p class="logo">LUMITECH</p>
+						<p id="devise"><strong>Entrez dans la lumière...</strong></p>
+					</header>
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navigation">						
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menu">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+							</li>
+						</ul>						
+						<form class="form-inline my-2 my-lg-0" role="search">
+							<input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+							<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Rechercher</button>
+						</form>
+					</div>
+					<a href="#" data-toggle="modal" data-target="#panier" title="Ouvrir le panier"><i class="fas fa-shopping-cart" id="caddie"></i></a>
+				</nav>
+				<div class="modal fade" id="panier" tabindex="-1" role="dialog" aria-labelledby="panier" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="titre-panier">Votre panier</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+							</div>
+							<div class="modal-body">
+							Votre panier est vide
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Poursuivre mes achats</button>
+								<button type="button" class="btn btn-primary" disabled>Passer commande</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<main class="col-12">
+						<div class="row" id="entete">
+							<h1 class="font-weight-bold col-12 col-md-8" id="nom-produit">Lampe de chevet 'Touch' à poser</h1>
+							<div class="col-12 col-md-4 rating">
+                                    <h2 class="stars" id="note">Note</h2>
+                                    <h3 class="font-italic" id="avis"><a href="#">Voir les avis</a></h3>
+                            </div>
+						</div>
+						<div class="row">
+							<article class="col-12">
+								<div class="row">
+									<p class="col-12 col-md-8"><img src="img/lampe-blanc.jpg" id ="photoproduit" class="img-fluid" alt="Lampe de chevet" aria-labelledby="description"></p>
+									<form  class="col-md-4" name="commande" action="#" method="get">
+										<div class="col-auto">
+											<h2 class="col-12" id="prix">PRIX</h2>
+										</div>
+										<div class="col-auto">
+											<p class="col-12">Choix couleur: <select id="coloris" class="form-control"></select></p>
+										</div>
+										<div class="col-auto">
+											<p class="col-12">Quantité: <input type="text" id="quantite" value="1" maxlength="3" class="col-2"></p>
+										</div>
+										<div class="col-auto">
+											<p class="col-12" id="disponibilite">DISPONIBILITE</p>
+										</div>
+										<div class="col-auto">
+											<button type="button" class="col-12 btn btn-primary btn-sm">AJOUTER AU PANIER</button>
+										</div>								
+									</form>									
+								</div>
+								
+								<div class="row">
+									<div class="col-12" id="description">
+											<h2>Lampe de chevet tactile !</h2>
+											<p>Choisissez la sobriété avec cette <strong>lampe de chevet tactile 'touch' !</strong>... Elle vous apportera l'essentiel ! Pratique et fonctionnelle : on l'effleure, elle s'allume, on l'effleure de nouveau, elle augmente d'intensité (2 fois), on l'effleure, elle s'éteint. Elle a aussi un joli look et offre 60 W de puissance lumineuse ! Profitez au choix de 3 intensités lumineuses, pratique en lampe de chevet, et très fonctionnel aussi dans le salon, selon l'ambiance voulue. Vrai éclairage, lampe d'appoint, petite présence lumineuse...</p>
+									</div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="technique">
+                                            <caption>Fiche Technique</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Coloris</th>
+                                                    <th scope="col">Hauteur</th>
+                                                    <th scope="col">Puissance</th>
+													<th scope="col">Type Ampoule</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="couleurChoisie">Couleur</td>
+                                                    <td>25cm</td>
+                                                    <td>60W</td>
+													<td>E14</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+								</div>
+							</article>
+						</div>
+					</main>
+				</div>
+				<div class="row">
+					<footer class="col-12">
+						<div class="row">
+							<p class="col-12">Tous droits réservés - Christophe BELBEOCH - Copyright 2019</p>
+						</div>
+					</footer>
+				</div>
+			</div>					
+		</div>
+		<script src="js/action.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
