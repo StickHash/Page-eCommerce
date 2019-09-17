@@ -1,1 +1,95 @@
+footer
+{
+	border-top: 1px solid gray;
+	color: white;
+	background-color: grey;
+}
+.table-responsive
+{
+	padding: 5%;
+}
+main
+{
+	padding: 3%;
+}
+nav
+{
+	padding: 0;
+	margin: 0 -15px 0 -15px;
+}
+.navbar
+{
+	background-color: whitesmoke;
+}
+@font-face 
+{
+    font-family: 'NeonBold';
+    src: url("../fonts/hellodenverdisplaybold_v1.6.ttf");
+}
+body
+{
+	background-color: seashell;
+	min-width: 80%;
+}
+header
+{
+	background-image: url("../img/silver.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: left;
+	color: deepskyblue;
+}
+caption
+{ 
+  caption-side: top;
+}
+.logo
+{
+	font-family: "NeonBold";
+	font-size: 3.5em;
+	margin-bottom:0;
+}
+#devise
+{
+	font-size: 1.3em;
+}
+#nom-produit
+{
+	font-size: 2.5em;
+}
+#note
+{
+	font-size: 1.2em;
+}
+.fa-star
+{
+    color: gold;
+}
+#quantite
+{
+	min-width: 10%;
+	max-width: 50px;
+}
+#coloris
+{
+	min-width: 10%;
+	max-width: 150px;
+}
+#caddie
+{
+	font-size: 2em;
+	padding:0 1em 0 2em;
+	color: grey;
+}
+#description
+{
+	padding-top: 3em;
+}
 
+@media (max-width: 768px)
+{
+	#caddie
+	{
+		padding: 0;
+	}
+}
